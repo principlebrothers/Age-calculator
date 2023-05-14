@@ -40,7 +40,7 @@ Users would be able to:
 ### Links
 
 - Solution URL: [GitHub solution](https://github.com/principlebrothers/Age-calculator)
-- Live Site URL: [Age Calulator Live](https://age-calculator-app-main-nu.vercel.app)
+- Live Site URL: [Age Calulator Live](https://age-calculator-app-main-nu.vercel.app/)
 
 ## My process
 
