@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-gray: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  padding: 0.5rem;
+  font-size: 32px;
+  font-weight: 400;
+  background-color: var(--off-white);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 15px 15px 100px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 1.2rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+form::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--light-gray);
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form__control label {
+  font-size: 0.74rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: var(--smokey-grey);
+  margin-bottom: 0.1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  width: clamp(60px, 10vw, 90px);
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-weight: 800;
+  color: var(--off-black);
+}
+
+input:focus {
+  outline: 1px solid var(--purple);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button[type='submit'] {
+  position: absolute;
+  right: 43%;
+  bottom: -60px;
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type='submit']:hover {
+  transform: translateY(-2px);
+  background-color: var(--dark-blue);
+}
+
+button[type='submit']:active {
+  background-color: var(--dark-blue);
+}
+
+
+.container .results {
+  align-self: start;
+  line-height: 0.2;
+  margin: 4rem 0 4rem 1rem;
+}
+
+.results p span {
+  font-weight: 800;
+  padding-right: 0.5rem;
+  font-style: italic;
+}
+
+.results p span:first-child {
+  color: var(--purple);
+  font-size: 38px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.attribution a {
+  color: var(--dark-blue);
+}
+
+.attribution a:hover {
+  color: #0c6bf9;
+}
+
+.error {
+  color: var(--light-red);
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+.form__control .error_color {
+  color: var(--light-red);
+}
+
+.form__control .error_border {
+  border-color: var(--light-red);
+}
+
+
+@media (width > 375px) {
+  .container {
+    padding-left: 30px;
+  }
+
+  form {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 150px
+  }
+
+  form::after {
+    right: -72px;
+    bottom: -35px;
+    width: 117%;
+  }
+
+  button[type='submit'] {
+    right: -110px;
+    bottom: -65px;
+    border-radius: 50%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  .container .results {
+    margin: 4rem 0 3rem 1rem;
+  }
+}
