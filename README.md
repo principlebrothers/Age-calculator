@@ -35,11 +35,12 @@ Users would be able to:
 - See the age numbers animate to their final number when the form is submitted
 
 ### Screenshot
-
+![Desktop View Age Calculator](./assets/images/Mysolution/Desktop_age_calc.png)
+![Mobile View Age Calculator](./assets/images/Mysolution/age-calculator-mobile-view.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub solution](https://github.com/principlebrothers/Age-calculator)
+- Live Site URL: [Age Calulator Live](https://age-calculator-app-main-nu.vercel.app)
 
 ## My process
 
